@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Car Rental Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <div class="watermark">
+            <svg xmlns="http://www.w3.org/2000/svg" width="120" height="50" viewBox="0 0 64 32">
+                <path d="M3 22c0-2 1-4 3-4h1l1-4c1-2 3-3 5-3h30c2 0 4 1 5 3l1 4h1c2 0 3 2 3 4v1H3v-1z" fill="none" stroke="#6a11cb" stroke-width="2" stroke-dasharray="4" />
+                <circle cx="15" cy="25" r="3" fill="#6a11cb"/>
+                <circle cx="49" cy="25" r="3" fill="#6a11cb"/>
+            </svg>
+        </div>
+        <h2>Welcome Back!</h2>
+        <form action="/login" method="POST">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p class="signup-link">Don't have an account? <a href="/signup">Sign up</a></p>
+        </form>
+    </div>
+</body>
+</html>
